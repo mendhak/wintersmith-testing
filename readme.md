@@ -8,9 +8,7 @@ The default [wintersmith](https://github.com/jnordberg/wintersmith) template
 
     cd docs
     npm install
-    # server in web server
-    ./node_modules/.bin/wintersmith preview
+    # serve in web server
+    ./node_modules/.bin/grunt wintersmith:preview
     # build directly in this docs folder
-    ./node_modules/.bin/wintersmith build  
-    # Server locally
-    python -m SimpleHttpServer
+    ./node_modules/.bin/grunt wintersmith:production  
