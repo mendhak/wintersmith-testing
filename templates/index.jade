@@ -6,11 +6,8 @@ block content
   each article in articles
     article.article.intro
       header
-        
-        //- h2
-        //-   != article.title
+         a(name=article.anchorname) 
       section.content
-          
           != typogr(article.html).typogrify()
       
 block prepend footer

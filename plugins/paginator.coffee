@@ -21,9 +21,14 @@ module.exports = (env, callback) ->
   getArticles = (contents) ->
     # helper that returns a list of articles found in *contents*
     articles = []
-    for k,v of contents
-      if k.endsWith(".md")
-        articles.push v if v instanceof env.plugins.Page
+    for key, value of contents
+      if key.endsWith(".md")
+        articles.push value if value instanceof env.plugins.Page
+        # Sets first part of filename as anchor name on page
+        for k,v of value
+          nameparts = value["filename"].replace('.html','').split "-"
+          value["anchorname"] = nameparts[0]
+
     for key, value of contents[options.articles]
       articles.push value if value instanceof env.plugins.Page
 
