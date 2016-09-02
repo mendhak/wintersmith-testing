@@ -4,11 +4,10 @@ extends layout
 block content
   
   each article in articles
-    article.article.intro
-      header
-         a(name=article.anchorname) 
-      section.content
-          != typogr(article.html).typogrify()
+    hr(id=article.anchorname)
+    section
+      div.lead
+        != typogr(article.html).typogrify()
       
 block prepend footer
   

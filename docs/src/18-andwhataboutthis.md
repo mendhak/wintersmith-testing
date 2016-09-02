@@ -1,9 +1,12 @@
 
-## Menu and icons
+
+## Menu and icons 
+
+![sshot](images/11.png)
 
 Use the views dropdown to navigate between the different presentations.  
 While you are logging, the green indicator will stay on.  
 The spinner only appears when the GPS is trying to get a fix.  
 
-![sshot](images/11.png) 
+ 
 

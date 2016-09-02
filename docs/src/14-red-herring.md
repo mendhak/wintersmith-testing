@@ -5,6 +5,8 @@ They tasted the food, and thought it was nice. Most fruit liked it -- but banana
 
 <span class="more"></span>
 
+![a banana](images/banana.png)
+
 They held a meeting at quarter past eight.
 Whilst the human's were getting home late.
 They decided they didn't want to be eaten they said:
@@ -25,4 +27,4 @@ Or else the banana's will kill you and me.
 We must take up arms, and fight to the end.
 Because, believe it or not, a banana is not a friend.
 
-![a banana](images/banana.png)
+
