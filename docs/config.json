@@ -1,5 +1,5 @@
 {
-  "output": "./",
+  "output": "",
   "baseUrl": "./",
   "locals": {
     "url": "http://localhost:8080",
