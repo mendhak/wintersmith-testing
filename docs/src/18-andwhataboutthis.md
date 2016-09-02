@@ -1,4 +1,9 @@
 
-### Hello world
+## Menu and icons
 
-This is just under `contents`, not even a subfolder like `articles`
+Use the views dropdown to navigate between the different presentations.  
+While you are logging, the green indicator will stay on.  
+The spinner only appears when the GPS is trying to get a fix.  
+
+![sshot](images/11.png) 
+

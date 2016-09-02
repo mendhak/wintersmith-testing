@@ -35,7 +35,7 @@ html(lang='en')
       div.content-wrap
         block footer
           section.about
-            !=contents['about.md'].html
+            include footer.html
           section.copy
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
