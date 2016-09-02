@@ -4,9 +4,9 @@
   "contents": "./src",
   "locals": {
     "url": "http://code.mendhak.com/wintersmith-testing",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "name": "GPSLogger for Android",
+    "owner": "Mendhak",
+    "description": "A battery efficient GPS logging application for Android"
   },
   "plugins": [
     "./plugins/paginator.coffee" 
