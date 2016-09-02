@@ -6,7 +6,7 @@
     "url": "http://code.mendhak.com/wintersmith-testing",
     "name": "GPSLogger for Android",
     "owner": "Mendhak",
-    "description": "A battery efficient GPS logging application for Android"
+    "description": "A battery efficient GPS logging application"
   },
   "plugins": [
     "./plugins/paginator.coffee" 

@@ -6,8 +6,12 @@ html {
     -webkit-text-size-adjust: 100%
 }
 body {
+    border-top: 6px solid #2391c9;
     background: #fff url(../images/content-bg.png);
-    margin: 0
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    outline: 0;
 }
 article,
 aside,
@@ -193,7 +197,7 @@ th {
     }
     a,
     a:visited {
-        text-decoration: underline
+        text-decoration: none
     }
     a[href]:after {
         content: " (" attr(href) ")"
@@ -1075,7 +1079,7 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     color: #333;
@@ -1096,7 +1100,7 @@ a {
 a:hover,
 a:focus {
     color: #23527c;
-    text-decoration: underline
+    text-decoration: none
 }
 a:focus {
     outline: thin dotted;
@@ -6965,9 +6969,7 @@ button.close {
         display: none !important
     }
 }
-body {
-    margin-top: 50px
-}
+
 
 @media (max-width: 768px) {
     .container {
@@ -6977,8 +6979,8 @@ body {
 header {
     display: block;
     width: 100%;
-    text-align: center;
-    background: url("http://placehold.it/1900x500") no-repeat center center scroll;
+    
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -6988,9 +6990,15 @@ header .headline {
     padding: 120px 0
 }
 header h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.9)
+    font-size: 60px;
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: bold;
+    color: #1e83b6;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    margin-top: 42px;
+    
 }
 header h2 {
     font-size: 77px;
@@ -6999,7 +7007,8 @@ header h2 {
 }
 @media (max-width: 1200px) {
     header h1 {
-        font-size: 140px
+        font-size: 60px;
+        line-height: 72px;
     }
     header h2 {
         font-size: 63px
@@ -7007,7 +7016,7 @@ header h2 {
 }
 @media (max-width: 991px) {
     header h1 {
-        font-size: 105px
+        font-size: 55px
     }
     header h2 {
         font-size: 50px
@@ -7183,4 +7192,98 @@ footer ul.photostream li {
 
 footer ul.photostream li a {
     border: none;
+}
+
+/*  6. Buttons  --------------------------------------------------------- */
+
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+   height: 42px;
+   background: #3695c6;
+   border: 1px solid #1C89C4;
+	display: inline-block;
+
+	font-family: "Open-sans", Sans-serif;
+   font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+   letter-spacing: 0;
+   color: #fff;
+   line-height: 42px;
+
+	cursor: pointer;
+   padding-left: 15px;
+   padding-right: 15px;
+	margin-bottom: 18px;
+
+    -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+
+   box-shadow: 0px 1px 2px rgba(0,0,0,0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+   background: #7AA300;
+   color: #fff;
+   border: 1px solid #739900;
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+   background: #7AA300;
+   color: #fff;
+   border: 1px solid #739900;
+}
+
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+p.description {
+    font-family: "Noticia Text", Serif;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    min-height: 30px;
+    font-weight: normal;
+    font-style: italic;
+    color: #a2a4a5;
+    margin-left: 5px;
+    margin-top: 6px;
+    vertical-align: center;
+}
+
+section.blurb{
+ line-height: 42px;  
+ font-size: 19px; 
+ color: #737373;
 }
