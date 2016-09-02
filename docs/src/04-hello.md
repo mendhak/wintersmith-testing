@@ -10,7 +10,8 @@ It all comes down to your hardware, settings and environment. The *accuracy* is 
 Do you think code would work too?
 
     var x = 9;
-    x = null;
+    console.log(x);
+    x++;
 
 Or perhaps with quotes...
 
