@@ -1,4 +1,6 @@
 {
+  "output": "./",
+  "baseUrl": "./",
   "locals": {
     "url": "http://localhost:8080",
     "name": "The Wintersmith's blog",
@@ -6,8 +8,8 @@
     "description": "Ramblings of an immor(t)al demigod"
   },
   "plugins": [
-    "./plugins/paginator.coffee",
-    "./plugins/blog.coffee"
+    "./plugins/paginator.coffee" 
+    
   ],
   "require": {
     "moment": "moment",
