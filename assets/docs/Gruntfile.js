@@ -33,7 +33,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-uncss');
 
 
-grunt.registerTask('preview', ['wintersmith:preview'])
-grunt.registerTask('production', ['wintersmith:production','uncss'])
+grunt.registerTask('checkarray', function(){ console.log(grunt.file.expand({  filter: 'isFile'}, ['../../docs/**/*.html'])); });
+grunt.registerTask('preview', ['wintersmith:preview']);
+grunt.registerTask('production', ['wintersmith:production','uncss']);
 
 };

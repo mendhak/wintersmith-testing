@@ -4,11 +4,15 @@ extends layout
 block append vars
   - bodyclass = 'article-detail'
 
+block linkrel
+  link(rel='stylesheet', href=env.helpers.makeRelative(page.url, env.config.baseUrl + 'css/main.css'))
+
+
 block prepend title
-  | #{ page.filename.replace('.html','').replace(/-/g,' ') + ' - '}
+  | #{ env.helpers.sortOfTitle(page) + ' - '}
 
 block header
-  
+    page.url  
 
 block content
     section

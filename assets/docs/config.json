@@ -1,6 +1,6 @@
 {
   "output": "../../docs/",
-  "baseUrl": "./",
+  "baseUrl": "/",
   "contents": "./src",
   "locals": {
     "url": "http://code.mendhak.com/wintersmith-testing",
@@ -9,9 +9,10 @@
     "description": "A battery efficient GPS logging application"
   },
   "plugins": [
+    "./plugins/sortoftitle.coffee",
     "./plugins/paginator.coffee",
-    "./plugins/blog.coffee"
-    
+    "./plugins/blog.coffee",
+    "./plugins/makerelative.coffee"
   ],
   "require": {
     "moment": "moment",

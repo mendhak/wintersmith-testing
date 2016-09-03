@@ -3,7 +3,7 @@ module.exports = (env, callback) ->
   defaults =
     postsDir: 'pages' # directory containing blog posts
     template: 'article.jade'
-    filenameTemplate: '/:file.html' # Here's the magic part
+    #filenameTemplate: '/:file.html' # Here's the magic part
 
   # assign defaults for any option not set in the config file
   options = env.config.blog or {}

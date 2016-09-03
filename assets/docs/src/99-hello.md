@@ -11,7 +11,7 @@ It all comes down to your hardware, settings and environment. The *accuracy* is 
 Images possible?
 ![an image](images/qrcode.gpslogger.png)
 
-Do you think code would work too?
+Do you think `code` would work too?  I sure hope that kind of `stuff works too!`
 
     var x = 9;
     console.log(x);
