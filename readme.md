@@ -8,9 +8,9 @@ Documentation is in [`src`](src).  Actual generated HTML is right here in `docs`
     cd assets/docs
     npm install
     # serve in web server using wintersmith preview
-    ./node_modules/.bin/grunt wintersmith:preview
+    ./node_modules/.bin/grunt preview
     # build directly in this docs folder using wintersmith build
-    ./node_modules/.bin/grunt wintersmith:production  
+    ./node_modules/.bin/grunt production  
 
 ## Android
 
@@ -20,4 +20,4 @@ It could sit in `docs\src` - have Android Gradle copy from there, have generated
 
 It could sit in `assets\docs` - have Android Gradle and wintermsith copy from there
 
-It could sit in   
+Other ideas...    
