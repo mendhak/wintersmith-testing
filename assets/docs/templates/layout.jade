@@ -34,9 +34,9 @@ html(lang='en')
         block content
           h2 Welcome to zombocom!
     footer.container
-      include footer.html
-      section.copy
-        p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; 
+      block footer
+        section.copy
+          p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; 
     //- footer
     //-   div.content-wrap
     //-     block footer

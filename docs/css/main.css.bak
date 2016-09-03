@@ -1259,7 +1259,7 @@ h6 .small,
 }
 h1,
 .h1 {
-    font-size: 36px
+    font-size: 42px
 }
 h2,
 .h2 {
@@ -7057,12 +7057,18 @@ main img.pull-left {
 main img.pull-right {
     margin-left: 40px
 }
+main h1 {
+    font-size: 70px
+}
 main h2 {
     font-size: 50px
 }
 @media (max-width: 1200px) {
     main hr {
         margin: 50px 0
+    }
+    main h1 {
+        font-size: 50px
     }
     main h2 {
         font-size: 35px

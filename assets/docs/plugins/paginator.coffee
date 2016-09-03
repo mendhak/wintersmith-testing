@@ -5,7 +5,7 @@ module.exports = (env, callback) ->
 
   defaults =
     template: 'index.jade' # template that renders pages
-    articles: 'articles' # directory containing contents to paginate
+    articles: 'pages' # directory containing contents to paginate
     first: 'index.html' # filename/url for first page
     filename: 'page/%d/index.html' # filename for rest of pages
     perPage: 2 # number of articles per page
@@ -33,7 +33,7 @@ module.exports = (env, callback) ->
     for key, value of contents[options.articles]
       articles.push value if value instanceof env.plugins.Page
 
-    articles.sort (a, b) -> b.date - a.date
+    #articles.sort (a, b) -> b.date - a.date
     return articles
 
   # getArticles = (contents) ->

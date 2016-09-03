@@ -1,14 +1,23 @@
 
-# Blog
+# Documentation
 
-The default [wintersmith](https://github.com/jnordberg/wintersmith) template
+Documentation is in [`src`](src).  Actual generated HTML is right here in `docs`, for Github Pages to serve. 
 
 
 ## Build it 
-
-    cd docs
+    cd assets/docs
     npm install
-    # serve in web server
+    # serve in web server using wintersmith preview
     ./node_modules/.bin/grunt wintersmith:preview
-    # build directly in this docs folder
+    # build directly in this docs folder using wintersmith build
     ./node_modules/.bin/grunt wintersmith:production  
+
+## Android
+
+Real question is - to share the MD between Android and the site, where should it sit?
+
+It could sit in `docs\src` - have Android Gradle copy from there, have generated files in `docs`
+
+It could sit in `assets\docs` - have Android Gradle and wintermsith copy from there
+
+It could sit in   

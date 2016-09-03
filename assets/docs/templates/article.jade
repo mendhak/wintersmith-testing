@@ -1,0 +1,19 @@
+
+extends layout
+
+block append vars
+  - bodyclass = 'article-detail'
+
+block prepend title
+  | #{ page.filename + ' - '}
+
+block header
+  
+
+block content
+    section
+      div.lead!= typogr(page.html).typogrify()
+
+block prepend footer
+  
+  

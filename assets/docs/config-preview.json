@@ -1,6 +1,6 @@
 {
   "output": "",
-  "baseUrl": "/",
+  "baseUrl": "/gpslogger/",
   "contents": "./src",
   "locals": {
     "url": "http://localhost:8080",
@@ -9,8 +9,8 @@
     "description": "A battery efficient GPS logging application"
   },
   "plugins": [
-    "./plugins/paginator.coffee" 
-    
+    "./plugins/paginator.coffee",
+    "./plugins/blog.coffee"
   ],
   "require": {
     "moment": "moment",

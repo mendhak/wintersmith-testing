@@ -1,5 +1,5 @@
 {
-  "output": "",
+  "output": "../../docs/",
   "baseUrl": "./",
   "contents": "./src",
   "locals": {
@@ -9,7 +9,8 @@
     "description": "A battery efficient GPS logging application"
   },
   "plugins": [
-    "./plugins/paginator.coffee" 
+    "./plugins/paginator.coffee",
+    "./plugins/blog.coffee"
     
   ],
   "require": {
