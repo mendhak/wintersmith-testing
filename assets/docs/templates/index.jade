@@ -28,9 +28,13 @@ block content
   
   each article in articles
     hr(id=article.anchorname)
+    
     section
       div.lead
         != typogr(article.html).typogrify()
+        if article.anchorname.startsWith('faq')
+          a(href="#" + article.anchorname)
+            img(src='images/permalink.png', style='float:left;height:25px;')
       
 block prepend footer
   include footer.html

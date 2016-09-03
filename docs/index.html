@@ -105,14 +105,14 @@
 <p><strong>Interference</strong> - there may be structures nearby blocking your&nbsp;signal.</p>
 <p><strong>Mid flight</strong> - if you are in a commercial aircraft, you are probably traveling too fast for your phone’s hardware to keep up with the <span class="caps">GPS</span>&nbsp;signals.</p>
 <p>You can read more a little more on what’s involved <a href="/wintersmith-testing/pages/gps-fix-details/">here</a></p>
-
+<a href="#faq01"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq02">
         <section>
           <div class="lead"><h2 id="why-are-the-fixes-sometimes-inaccurate-">Why are the fixes sometimes&nbsp;inaccurate?</h2>
 <p>It all comes down to your hardware, settings and environment. The accuracy is only as good as your phone’s <span class="caps">GPS</span> chip. Some phones may have 4 meter accuracies, some have 500 meters. Also, using GPS satellites will give you better accuracy but take a longer time; using network location will give worse accuracy but is quicker. You may also want to check your environment, as there can be inaccuracy due to clouds, buildings, sunspots, alien invasion,&nbsp;etc.</p>
-
+<a href="#faq02"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq03">
@@ -128,14 +128,14 @@
 <li><p>Additionally, on Android 6+ (Marshmallow), a new feature called <em><a href="https://developer.android.com/training/monitoring-device-state/doze-standby.html">doze mode</a></em> was introduced, which severely restricts activity on the device after certain periods of inactivity. You can choose to <a href="http://www.cnet.com/uk/how-to/stop-specific-apps-from-using-doze-on-android-6-0-marshmallow/">whitelist GPSLogger</a> which does not bypass doze mode but occasionally provides logging windows in which to work. It will not make a great difference though, doze mode is quite&nbsp;aggressive.</p>
 </li>
 </ul>
-
+<a href="#faq03"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq04">
         <section>
           <div class="lead"><h2 id="it-s-using-the-wrong-timezone-can-you-make-it-use-my-timezone-">It’s using the wrong timezone, can you make it use my&nbsp;timezone?</h2>
 <p>The standard when logging points is to use <span class="caps">UTC</span>. Since this is the standard, it would be wrong to use the the local time zone, the file is considered invalid. Instead, it is the responsibility of the software you use the log file on (Google Earth, GeoSetter, etc.) to adjust for your timezone. Any application that deals with GPX or KML files will have a setting that allows you to specify your own&nbsp;timezone.</p>
-
+<a href="#faq04"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq05">
@@ -143,7 +143,7 @@
           <div class="lead"><h2 id="i-am-displaying-imperial-units-but-why-isn-t-it-logging-imperial-to-the-file-">I am displaying imperial units but why isn’t it logging imperial to the&nbsp;file?</h2>
 <h2 id="what-are-the-units-in-which-the-values-are-logged-">What are the units in which the values are&nbsp;logged?</h2>
 <p>The imperial units are only for display purposes and nothing else. However, when logging, the units are always in <strong><span class="caps">SI</span> units</strong> - meters and&nbsp;seconds.</p>
-
+<a href="#faq05"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq06">
@@ -159,14 +159,14 @@
 <p>If you have a file explorer installed, you can click on the folder paths in the simple/detailed&nbsp;screens.</p>
 <p>To copy the GPSLogger files, you can connect your phone to your computer and mount the <span class="caps">SD</span> card, then copy straight from the above folder. You can also change the default folder in the app&nbsp;settings. </p>
 <p>Finally, note that due to the <a href="http://commonsware.com/blog/2014/04/09/storage-situation-removable-storage.html">restrictions introduced in Android KitKat</a>, any files in the default folder will be removed if you uninstall the&nbsp;app.</p>
-
+<a href="#faq06"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq07">
         <section>
           <div class="lead"><h2 id="i-ve-changed-the-settings-but-it-s-still-showing-using-the-old-settings">I’ve changed the settings, but it’s still showing/using the old&nbsp;settings</h2>
 <p>If the app is logging, and you make changes to the settings, the changes will take effect <em>after</em> the next point is logged. This means that if you’ve set your interval as 1 hour, you have a long wait ahead of you. If you want the changes to take effect immediately, then stop logging and start it again so that the changes are&nbsp;refreshed.</p>
-
+<a href="#faq07"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq08">
@@ -179,7 +179,7 @@
 <p><strong>Absolute timeout</strong> - When searching for a point and trying over and over, the app will give up when this timeout is reached.  This is useful for when you’re inside buildings, <span class="caps">GPS</span> tends to keep searching and finding&nbsp;nothing.  </p>
 <p><strong>Keep <span class="caps">GPS</span> on between fixes</strong> - Normally, the app stops using <span class="caps">GPS</span> between points, to save battery.  This means when it’s time to log the next point, the GPS needs to be ‘woken up’ again and this takes a little time.  Keeping GPS on between fixes causes this ‘wake up’ time to be&nbsp;reduced.</p>
 <p><strong>Don’t log if I’m not moving</strong> - Some Android phones come with activity recognition; the app can use this to determine if you are not moving and if so, it will not attempt to log a&nbsp;point. </p>
-
+<a href="#faq08"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq09">
@@ -190,14 +190,14 @@
 <p>If you turn mobile data off, you’ll probably want to inject aGPS data regularly, there are apps that can do it for you. You can also try going into airplane mode which turns many things&nbsp;off. </p>
 <p>When it comes to choosing between <em>location sources</em> - <span class="caps">GPS</span> vs network - GPS will be more battery hungry, but has better accuracy; network location is easier on the battery but isn’t as&nbsp;accurate.</p>
 <p>For <em>time intervals</em>, consider using 60 seconds or&nbsp;more.</p>
-
+<a href="#faq09"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq10">
         <section>
           <div class="lead"><h2 id="the-app-doesn-t-log-at-exactly-x-seconds-as-i-ve-specified">The app doesn’t log at exactly <em>x</em> seconds as I’ve&nbsp;specified</h2>
 <p>It’s how the Android <span class="caps">OS</span> has implemented its GPS system. When you say you want a point every 60 seconds (for example), that’s actually a suggestion rather than an imperative, and so the time interval between GPS points is never guaranteed. GPSLogger has logic that checks the time difference, though, and will make sure that at least 60 seconds have passed before logging again.  It is not meant for sub-second logging, as that will require aggressive&nbsp;wakelocks.</p>
-
+<a href="#faq10"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq11">
@@ -205,7 +205,7 @@
           <div class="lead"><h2 id="why-can-t-i-remove-the-notification-">Why can’t I remove the&nbsp;notification?</h2>
 <p>As of newer versions of Android, removing the notification will cause the service to be killed. As a result, the notification now needs to stay there. You may have seen a recent increase in the number of apps that need to sit in the notification bar for the same reason - to perform background services without being&nbsp;killed.  </p>
 <p>There is an option in the app’s settings that allows you to remove the notification buttons if you want a smaller&nbsp;notification.  </p>
-
+<a href="#faq11"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq12">
@@ -213,7 +213,7 @@
           <div class="lead"><h2 id="what-settings-are-required-for-task-managers-">What settings are required for task&nbsp;managers?</h2>
 <p>Task managers don’t like GPSLogger and will <em>frequently</em> kill the&nbsp;service.  </p>
 <p>Due to the varied nature of the way task managers and task killers work, I simply cannot help or advise with any problems where you have one of these installed, and <a href="http://www.howtogeek.com/166140/you-dont-need-to-install-a-task-manager-how-to-manage-running-apps-on-android/">would advise against it as&nbsp;well</a></p>
-
+<a href="#faq12"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq13">
@@ -221,7 +221,7 @@
           <div class="lead"><h2 id="how-is-this-different-from-other-logging-apps-">How is this different from other logging&nbsp;apps?</h2>
 <p>It’s meant to be more battery efficient. A lot of other apps, such as MyTracks, usually go with the assumption that you have a data connection available and your routes won’t be very long. They use <span class="caps">CPU</span> wakelocks and log points extremely frequently with high accuracy. The aim of GPSLogger is to log points and stay&nbsp;quiet.  </p>
 <p>To put it another way, MyTracks or similar are better suited for runs; GPSLogger is suited for days out, hiking,&nbsp;photography.</p>
-
+<a href="#faq13"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq14">
@@ -246,7 +246,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <p><code>setprefercelltower</code> - (true/false) Enables or disables the <span class="caps">GPS</span> or celltower&nbsp;listeners</p>
 </blockquote>
 <p>You can also invoke the Start and Stop <strong>shortcuts</strong> that GPSLogger comes&nbsp;with.</p>
-
+<a href="#faq14"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq15">
@@ -256,7 +256,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <p>If you create a file in the default folder or at <code>/sdcard/gpslogger.properties</code>, then GPSLogger will read this file each time it loads and apply those settings to the&nbsp;application. </p>
 <p>For example, in the file you can put <code>accuracy_before_logging=42</code> and that will reset the <em>Accuracy Filter</em> to 42 meters each time the application starts. There are many properties that can be applied and you can glean a <a href="https://github.com/mendhak/gpslogger/blob/master/gpslogger/src/main/java/com/mendhak/gpslogger/common/PreferenceNames.java">full list here</a>.</p>
 <p>The most common examples of properties would be <code>log_gpx</code>, <code>log_kml</code>, <code>time_before_logging</code>, <code>opengts_*</code> for OpenGTS settings, <code>smtp_*</code> for email&nbsp;settings.</p>
-
+<a href="#faq15"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq16">
@@ -264,7 +264,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
           <div class="lead"><h2 id="how-do-i-download-it-">How do I download&nbsp;it?</h2>
 <p>Search for <span class="caps">GPS</span> Logger for Android in Google Play, or follow <a href="market://details?id=com.mendhak.gpslogger">this direct link</a>.</p>
 <p>You can also download the <a href="https://github.com/mendhak/gpslogger/releases"><span class="caps">APK</span> directly here</a>.</p>
-
+<a href="#faq16"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq17">
@@ -290,7 +290,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <li>Tracking of geocaches, gravestones, repair sites,&nbsp;etc.</li>
 <li>Tracking friends and family on&nbsp;holiday</li>
 </ul>
-
+<a href="#faq17"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq18">
@@ -298,7 +298,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
           <div class="lead"><h2 id="can-i-use-your-app-in-a-research-project-">Can I use your app in a research&nbsp;project?</h2>
 <p>This is actually the most commonly asked question!  Yes, feel free to use GPSLogger in your&nbsp;research.  </p>
 <p>The source code is <a href="https://github.com/mendhak/gpslogger/">available on Github</a> if you want to dig through it.  Feel free to link back to the <a href="https://github.com/mendhak/gpslogger/">Github repo</a> for&nbsp;credit/citation.</p>
-
+<a href="#faq18"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq19">
@@ -308,7 +308,17 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <p>Tap the profile header and then “Add profile” to create a new profile. The new profile will have the same settings as the one you’re currently on.  You can then modify a few settings and those should be specific to your new&nbsp;profile.</p>
 <p>Conversely, any settings you change in one profile won’t automatically be saved in other <em>existing</em> profiles.  It is recommended that you do your basic setup in the <em>Default Profile</em>&nbsp;first.  </p>
 <p>You can delete a profile by long pressing&nbsp;it.</p>
-
+<a href="#faq19"><img src="images/permalink.png" style="float:left;height:25px;"></a>
+          </div>
+        </section>
+        <hr id="faq20">
+        <section>
+          <div class="lead"><h2 id="troubleshooting">Troubleshooting</h2>
+<p>Sometimes the app might not behave in an expected&nbsp;way.  </p>
+<p>You can troubleshoot it yourself by going to <em>General Options</em> and enabling the <em>Write to debug file</em>&nbsp;option.  </p>
+<p>Next, reproduce the behavior or problem, and this creates a <code>debuglog.txt</code> file in the GPSLogger&nbsp;directory.  </p>
+<p>You can then grab the file off your phone and have a look through it, or email it to yourself from the same screen (<em>Attach debug log to email</em>).  Be sure to turn it off afterwards as this file grows very&nbsp;fast.   </p>
+<a href="#faq20"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="faq99">
@@ -323,7 +333,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <h3 id="-open-source-libraries-used-pages-open-source-libraries-"><a href="/wintersmith-testing/pages/open-source-libraries/">Open source libraries&nbsp;used</a></h3>
 <h3 id="-donate-paypal-https-paypal-me-mendhak-"><a href="https://paypal.me/mendhak/">Donate&nbsp;Paypal</a></h3>
 <h3 id="-donate-bitcoin-https-coinbase-com-mendhak-"><a href="https://coinbase.com/mendhak">Donate&nbsp;Bitcoin</a></h3>
-
+<a href="#faq99"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
         </section>
         <hr id="ss01">
@@ -403,7 +413,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
   
 
       <section class="copy">
-        <p>&copy; 2016 Mendhak &mdash; </p>
+        <p>&copy; Sat Sep 03 2016 20:05:08 GMT+0100 (BST) Mendhak &mdash; </p>
       </section>
     </footer>
   </body>
