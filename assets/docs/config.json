@@ -1,9 +1,9 @@
 {
   "output": "../../docs/",
-  "baseUrl": "/",
+  "baseUrl": "/wintersmith-testing/",
   "contents": "./src",
   "locals": {
-    "url": "http://code.mendhak.com/wintersmith-testing",
+    "url": "http://code.mendhak.com/",
     "name": "GPSLogger for Android",
     "owner": "Mendhak",
     "description": "A battery efficient GPS logging application"
@@ -11,8 +11,7 @@
   "plugins": [
     "./plugins/sortoftitle.coffee",
     "./plugins/paginator.coffee",
-    "./plugins/blog.coffee",
-    "./plugins/makerelative.coffee"
+    "./plugins/blog.coffee"
   ],
   "require": {
     "moment": "moment",

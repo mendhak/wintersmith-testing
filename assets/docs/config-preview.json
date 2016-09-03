@@ -11,8 +11,7 @@
   "plugins": [
     "./plugins/sortoftitle.coffee",
     "./plugins/paginator.coffee",
-    "./plugins/blog.coffee",
-    "./plugins/makerelative.coffee"
+    "./plugins/blog.coffee"
   ],
   "require": {
     "moment": "moment",
