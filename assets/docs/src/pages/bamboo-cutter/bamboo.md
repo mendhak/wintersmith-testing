@@ -7,7 +7,7 @@ He was very poor and sad also, for no child had Heaven sent to cheer his old age
 
 <span class="more"></span>
 
-![Taketori Monogatari](taketori_monogatari.jpg)
+![Taketori Monogatari](images/taketori_monogatari.jpg)
 
 One morning as usual he had gone out to his work, and having found a nice clump of bamboos, had set to work to cut some of them down. Suddenly the green grove of bamboos was flooded with a bright soft light, as if the full moon had risen over the spot. Looking round in astonishment, he saw that the brilliance was streaming from one bamboo. The old man. full of wonder. dropped his ax and went towards the light. On nearer approach he saw that this soft splendor came from a hollow in the green bamboo stem, and still more wonderful to behold, in the midst of the brilliance stood a tiny human being, only three inches in height, and exquisitely beautiful in appearance.
 
