@@ -16,23 +16,12 @@ html(lang='en')
     header.header
       div.container
         block header
-            img(src="images/gps_icon05.png", class="pull-left logo")
-            h1
-              a(href=locals.url)= locals.name
-            p.description= locals.description
-            section.blurb!= "GPSLogger uses the GPS capabilities of your Android phone to log coordinates to GPS format files at regular intervals. This can be particularly useful if you want to geotag your photos after a day out or share your travel route with someone. The purpose of this application is to be battery efficient to save you battery power when abroad and last as long as possible."
-            a.button= "Tour" 
-            =" "
-            a.button= "FAQ"
-            =" "   
-            a.button= "Screenshots" 
-            =" "
-            img(src="images/Paypal-Donate-Button-Image.png", class="pull-right", height="55px")
+            
             
     div.container
       main
         block content
-          h2 Welcome to zombocom!
+          h2 GPSLogger
     footer.container
       block footer
         section.copy

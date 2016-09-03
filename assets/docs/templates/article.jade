@@ -5,7 +5,7 @@ block append vars
   - bodyclass = 'article-detail'
 
 block prepend title
-  | #{ page.filename + ' - '}
+  | #{ page.filename.replace('.html','').replace(/-/g,' ') + ' - '}
 
 block header
   
