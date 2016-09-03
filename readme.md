@@ -32,4 +32,4 @@ This is based off the site that `wintersmith new` generates.  Modified so that i
 
 `templates/index.jade` - Changed to show entire contents of every file, effectively a single page
 
-Problem - The `filenameTemplate` only applies to the .html file, so any accompanying images still go to the old location - `pages/blah/abc.png`.  
+Problem - The `filenameTemplate` only applies to the .html file, so any accompanying images still go to the old location - `pages/blah/abc.png`.  Reverted to original filenameTemplate by not specifying it.  
