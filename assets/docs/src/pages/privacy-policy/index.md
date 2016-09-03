@@ -3,7 +3,7 @@
 
 Last updated: March 3 2016
 
-**In short - We do not collect any personal information from you.**   
+#### In short - We do not collect any personal information from you.   
 
 ## Summary
 
@@ -20,6 +20,6 @@ If you use the auto **email** service (SMTP), you will enter credentials for you
 If you enable the **debug** feature for the purpose of troubleshooting, various location, diagnostics and trace information is written to this file.  This file stays on your device for your own perusal.  This information is not collected in any way by us.  
 
 
-### Contact Us
+## Contact Us
 
 If you have any questions about this Privacy Policy, please contact us.
