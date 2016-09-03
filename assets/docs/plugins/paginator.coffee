@@ -33,7 +33,10 @@ module.exports = (env, callback) ->
     for key, value of contents[options.articles]
       articles.push value if value instanceof env.plugins.Page
 
-    articles.sort (a, b) -> a.filename > b.filename
+    articles.sort
+    # articles.sort (a, b) ->
+    #   console.log a.filename + " vs " + b.filename + " = " + (a.filename > b.filename)
+    #   a.filename > b.filename
     #articles.sort (a, b) -> b.date - a.date
     return articles
 
