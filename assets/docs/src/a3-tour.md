@@ -1,13 +1,11 @@
-### Menus
+### Simple view
 
-![3](images/3.png)
+![1](images/1.png)
 
-Many menu items
+Shows your last recorded GPS point, updates when new point available  
 
-**Profiles** - Group preferences under profile names, such as default, nighttime, trekking, etc.
+Tap any field to highlight the text
 
-**General options** - Startup, imperial, debug file and version info
+Big start/stop button. You can't miss it
 
-**Logging details** - File formats, folder, new file creation, frequency, accuracy
-
-**Auto send, email and upload** - Settings for various destinations such as Google Docs, FTP, Dropbox
+Distance travelled is the total distance between all points.

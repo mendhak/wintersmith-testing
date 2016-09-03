@@ -15,7 +15,7 @@
       <div class="container"><img src="images/gps_icon05.png" class="pull-left logo">
         <h1><a href="http://code.mendhak.com/">GPSLogger for Android</a></h1>
         <p class="description">A battery efficient GPS logging application</p>
-        <section class="blurb">GPSLogger uses the GPS capabilities of your Android phone to log coordinates to GPS format files at regular intervals. This can be particularly useful if you want to geotag your photos after a day out or share your travel route with someone. The purpose of this application is to be battery efficient to save you battery power when abroad and last as long as possible.</section><a class="button">Tour</a> <a class="button">FAQ</a> <a class="button">Screenshots</a> <a href="https://paypal.me/mendhak/" class="pull-right"><img src="images/Paypal-Donate-Button-Image.png" height="55px" class="pull-right"> </a><a href="https://github.com/mendhak/gpslogger/" class="pull-right"><img src="images/social/GitHub_Logo.png" height="40px" class="pull-right"> <img src="images/social/GitHub-Mark-64px.png" height="40px" class="pull-right"></a><a href="https://play.google.com/store/apps/details?id=com.mendhak.gpslogger" class="pull-right"><img src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" height="50px" class="pull-right"> </a>
+        <section class="blurb">GPSLogger uses the GPS capabilities of your Android phone to log coordinates to GPS format files at regular intervals. This can be particularly useful if you want to geotag your photos after a day out or share your travel route with someone. The purpose of this application is to be battery efficient to save you battery power when abroad and last as long as possible.</section><a href="#a1" class="button">Tour</a> <a href="#faq01" class="button">FAQ</a> <a class="button">Screenshots</a> <a href="https://paypal.me/mendhak/" class="pull-right"><img src="images/Paypal-Donate-Button-Image.png" height="55px" class="pull-right"> </a><a href="https://github.com/mendhak/gpslogger/" class="pull-right"><img src="images/social/GitHub_Logo.png" height="40px" class="pull-right"> <img src="images/social/GitHub-Mark-64px.png" height="40px" class="pull-right"></a><a href="https://play.google.com/store/apps/details?id=com.mendhak.gpslogger" class="pull-right"><img src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" height="50px" class="pull-right"> </a>
       </div>
     </header>
     <div class="container">
@@ -33,17 +33,6 @@
         </section>
         <hr id="a2">
         <section>
-          <div class="lead"><h3 id="simple-view">Simple&nbsp;view</h3>
-<p><img src="/wintersmith-testing/images/1.png" alt="1"></p>
-<p>Shows your last recorded <span class="caps">GPS</span> point, updates when new point&nbsp;available  </p>
-<p>Tap any field to highlight the&nbsp;text</p>
-<p>Big start/stop button. You can’t miss&nbsp;it</p>
-<p>Distance travelled is the total distance between all&nbsp;points.</p>
-
-          </div>
-        </section>
-        <hr id="a3">
-        <section>
           <div class="lead"><h3 id="menus">Menus</h3>
 <p><img src="/wintersmith-testing/images/3.png" alt="3"></p>
 <p>Many menu&nbsp;items</p>
@@ -51,6 +40,17 @@
 <p><strong>General options</strong> - Startup, imperial, debug file and version&nbsp;info</p>
 <p><strong>Logging details</strong> - File formats, folder, new file creation, frequency,&nbsp;accuracy</p>
 <p><strong>Auto send, email and upload</strong> - Settings for various destinations such as Google Docs, <span class="caps">FTP</span>,&nbsp;Dropbox</p>
+
+          </div>
+        </section>
+        <hr id="a3">
+        <section>
+          <div class="lead"><h3 id="simple-view">Simple&nbsp;view</h3>
+<p><img src="/wintersmith-testing/images/1.png" alt="1"></p>
+<p>Shows your last recorded <span class="caps">GPS</span> point, updates when new point&nbsp;available  </p>
+<p>Tap any field to highlight the&nbsp;text</p>
+<p>Big start/stop button. You can’t miss&nbsp;it</p>
+<p>Distance travelled is the total distance between all&nbsp;points.</p>
 
           </div>
         </section>
@@ -70,41 +70,6 @@
 <p>Big&nbsp;text</p>
 <p>Meant for landscape&nbsp;mode</p>
 <p>Awkward in portrait&nbsp;mode</p>
-
-          </div>
-        </section>
-        <hr id="faq01">
-        <section>
-          <div class="lead"><h1 id="frequently-asked-questions-and-issues">Frequently asked questions and&nbsp;issues</h1>
-<h2 id="why-is-it-taking-so-long-to-find-a-fix-">Why is it taking so long to find a&nbsp;fix?</h2>
-<p>There can be several reasons reasons for&nbsp;this.</p>
-<p><strong>New location</strong> - if you are at a new location after a long flight, the <span class="caps">GPS</span> on your phone can take a while to reorient itself. Try running GPSLogger at high frequency until it does find a&nbsp;location.</p>
-<p><strong>Interference</strong> - there may be structures nearby blocking your&nbsp;signal.</p>
-<p><strong>Mid flight</strong> - if you are in a commercial aircraft, you are probably traveling too fast for your phone’s hardware to keep up with the <span class="caps">GPS</span>&nbsp;signals.</p>
-<p>You can read more a little more on what’s involved <a href="/wintersmith-testing/pages/gps-fix-details/">here</a></p>
-
-          </div>
-        </section>
-        <hr id="faq03">
-        <section>
-          <div class="lead"><h2 id="my-time-interval-has-passed-but-no-point-was-logged">My time interval has passed, but no point was&nbsp;logged</h2>
-<h2 id="sometimes-the-app-will-not-log-for-long-periods-of-time">Sometimes, the app will not log for long periods of&nbsp;time</h2>
-<p>Sometimes your specified time interval will have passed, but no point was logged.  There are a few reasons this could&nbsp;happens. </p>
-<ul>
-<li><p>The <span class="caps">GPS</span> system will have attempted to find its location and given up after a while. This in turn means that Android OS will not have given a location to&nbsp;GPSLogger</p>
-</li>
-<li><p>The accuracy was below your <em>Accuracy filter</em> settings, or the distance was below your <em>Distance filter</em> settings, so GPSLogger didn’t log it. You can try setting a <em>retry interval</em> in which GPSLogger can wait for a more accurate point to show up and then use it.  Or you can allow for slightly more inaccurate fixes - your mileage may vary as every phone is different in terms of how accurate a fix it can get on a regular&nbsp;basis. </p>
-</li>
-<li><p>Additionally, on Android 6+ (Marshmallow), a new feature called <em><a href="https://developer.android.com/training/monitoring-device-state/doze-standby.html">doze mode</a></em> was introduced, which severely restricts activity on the device after certain periods of inactivity. You can choose to <a href="http://www.cnet.com/uk/how-to/stop-specific-apps-from-using-doze-on-android-6-0-marshmallow/">whitelist GPSLogger</a> which does not bypass doze mode but occasionally provides logging windows in which to work. It will not make a great difference though, doze mode is quite&nbsp;aggressive.</p>
-</li>
-</ul>
-
-          </div>
-        </section>
-        <hr id="faq02">
-        <section>
-          <div class="lead"><h2 id="why-are-the-fixes-sometimes-inaccurate-">Why are the fixes sometimes&nbsp;inaccurate?</h2>
-<p>It all comes down to your hardware, settings and environment. The accuracy is only as good as your phone’s <span class="caps">GPS</span> chip. Some phones may have 4 meter accuracies, some have 500 meters. Also, using GPS satellites will give you better accuracy but take a longer time; using network location will give worse accuracy but is quicker. You may also want to check your environment, as there can be inaccuracy due to clouds, buildings, sunspots, alien invasion,&nbsp;etc.</p>
 
           </div>
         </section>
@@ -131,6 +96,41 @@
 
           </div>
         </section>
+        <hr id="faq01">
+        <section>
+          <div class="lead"><h1 id="frequently-asked-questions-and-issues">Frequently asked questions and&nbsp;issues</h1>
+<h2 id="why-is-it-taking-so-long-to-find-a-fix-">Why is it taking so long to find a&nbsp;fix?</h2>
+<p>There can be several reasons reasons for&nbsp;this.</p>
+<p><strong>New location</strong> - if you are at a new location after a long flight, the <span class="caps">GPS</span> on your phone can take a while to reorient itself. Try running GPSLogger at high frequency until it does find a&nbsp;location.</p>
+<p><strong>Interference</strong> - there may be structures nearby blocking your&nbsp;signal.</p>
+<p><strong>Mid flight</strong> - if you are in a commercial aircraft, you are probably traveling too fast for your phone’s hardware to keep up with the <span class="caps">GPS</span>&nbsp;signals.</p>
+<p>You can read more a little more on what’s involved <a href="/wintersmith-testing/pages/gps-fix-details/">here</a></p>
+
+          </div>
+        </section>
+        <hr id="faq02">
+        <section>
+          <div class="lead"><h2 id="why-are-the-fixes-sometimes-inaccurate-">Why are the fixes sometimes&nbsp;inaccurate?</h2>
+<p>It all comes down to your hardware, settings and environment. The accuracy is only as good as your phone’s <span class="caps">GPS</span> chip. Some phones may have 4 meter accuracies, some have 500 meters. Also, using GPS satellites will give you better accuracy but take a longer time; using network location will give worse accuracy but is quicker. You may also want to check your environment, as there can be inaccuracy due to clouds, buildings, sunspots, alien invasion,&nbsp;etc.</p>
+
+          </div>
+        </section>
+        <hr id="faq03">
+        <section>
+          <div class="lead"><h2 id="my-time-interval-has-passed-but-no-point-was-logged">My time interval has passed, but no point was&nbsp;logged</h2>
+<h2 id="sometimes-the-app-will-not-log-for-long-periods-of-time">Sometimes, the app will not log for long periods of&nbsp;time</h2>
+<p>Sometimes your specified time interval will have passed, but no point was logged.  There are a few reasons this could&nbsp;happens. </p>
+<ul>
+<li><p>The <span class="caps">GPS</span> system will have attempted to find its location and given up after a while. This in turn means that Android OS will not have given a location to&nbsp;GPSLogger</p>
+</li>
+<li><p>The accuracy was below your <em>Accuracy filter</em> settings, or the distance was below your <em>Distance filter</em> settings, so GPSLogger didn’t log it. You can try setting a <em>retry interval</em> in which GPSLogger can wait for a more accurate point to show up and then use it.  Or you can allow for slightly more inaccurate fixes - your mileage may vary as every phone is different in terms of how accurate a fix it can get on a regular&nbsp;basis. </p>
+</li>
+<li><p>Additionally, on Android 6+ (Marshmallow), a new feature called <em><a href="https://developer.android.com/training/monitoring-device-state/doze-standby.html">doze mode</a></em> was introduced, which severely restricts activity on the device after certain periods of inactivity. You can choose to <a href="http://www.cnet.com/uk/how-to/stop-specific-apps-from-using-doze-on-android-6-0-marshmallow/">whitelist GPSLogger</a> which does not bypass doze mode but occasionally provides logging windows in which to work. It will not make a great difference though, doze mode is quite&nbsp;aggressive.</p>
+</li>
+</ul>
+
+          </div>
+        </section>
         <hr id="faq04">
         <section>
           <div class="lead"><h2 id="it-s-using-the-wrong-timezone-can-you-make-it-use-my-timezone-">It’s using the wrong timezone, can you make it use my&nbsp;timezone?</h2>
@@ -143,13 +143,6 @@
           <div class="lead"><h2 id="i-am-displaying-imperial-units-but-why-isn-t-it-logging-imperial-to-the-file-">I am displaying imperial units but why isn’t it logging imperial to the&nbsp;file?</h2>
 <h2 id="what-are-the-units-in-which-the-values-are-logged-">What are the units in which the values are&nbsp;logged?</h2>
 <p>The imperial units are only for display purposes and nothing else. However, when logging, the units are always in <strong><span class="caps">SI</span> units</strong> - meters and&nbsp;seconds.</p>
-
-          </div>
-        </section>
-        <hr id="faq07">
-        <section>
-          <div class="lead"><h2 id="i-ve-changed-the-settings-but-it-s-still-showing-using-the-old-settings">I’ve changed the settings, but it’s still showing/using the old&nbsp;settings</h2>
-<p>If the app is logging, and you make changes to the settings, the changes will take effect <em>after</em> the next point is logged. This means that if you’ve set your interval as 1 hour, you have a long wait ahead of you. If you want the changes to take effect immediately, then stop logging and start it again so that the changes are&nbsp;refreshed.</p>
 
           </div>
         </section>
@@ -169,14 +162,10 @@
 
           </div>
         </section>
-        <hr id="faq09">
+        <hr id="faq07">
         <section>
-          <div class="lead"><h2 id="how-do-i-make-the-app-last-longer-">How do I make the app last&nbsp;longer?</h2>
-<h2 id="are-there-any-recommended-settings-">Are there any recommended&nbsp;settings?</h2>
-<p>Mainly, turn wifi off, turn mobile data off, turn background synchronization off, turn bluetooth&nbsp;off. </p>
-<p>If you turn mobile data off, you’ll probably want to inject aGPS data regularly, there are apps that can do it for you. You can also try going into airplane mode which turns many things&nbsp;off. </p>
-<p>When it comes to choosing between <em>location sources</em> - <span class="caps">GPS</span> vs network - GPS will be more battery hungry, but has better accuracy; network location is easier on the battery but isn’t as&nbsp;accurate.</p>
-<p>For <em>time intervals</em>, consider using 60 seconds or&nbsp;more.</p>
+          <div class="lead"><h2 id="i-ve-changed-the-settings-but-it-s-still-showing-using-the-old-settings">I’ve changed the settings, but it’s still showing/using the old&nbsp;settings</h2>
+<p>If the app is logging, and you make changes to the settings, the changes will take effect <em>after</em> the next point is logged. This means that if you’ve set your interval as 1 hour, you have a long wait ahead of you. If you want the changes to take effect immediately, then stop logging and start it again so that the changes are&nbsp;refreshed.</p>
 
           </div>
         </section>
@@ -187,6 +176,17 @@
 <p><strong>Distance filter</strong> - When a point becomes available, the app will check to ensure that this much distance exists between the previous and current points. If it isn’t this distance, the point is&nbsp;discarded.</p>
 <p><strong>Accuracy filter</strong> - When a point becomes available, the app will check to ensure that this point has a minimum accuracy specified. If it does not match the specified accuracy, the point is discarded. This is useful if you are inside a building for a&nbsp;while.</p>
 <p><strong>Time interval for accuracy</strong> - When searching for a point, the app can continue searching for this many seconds until it finds a point that meets the accuracy and distance filter criteria&nbsp;above.</p>
+
+          </div>
+        </section>
+        <hr id="faq09">
+        <section>
+          <div class="lead"><h2 id="how-do-i-make-the-app-last-longer-">How do I make the app last&nbsp;longer?</h2>
+<h2 id="are-there-any-recommended-settings-">Are there any recommended&nbsp;settings?</h2>
+<p>Mainly, turn wifi off, turn mobile data off, turn background synchronization off, turn bluetooth&nbsp;off. </p>
+<p>If you turn mobile data off, you’ll probably want to inject aGPS data regularly, there are apps that can do it for you. You can also try going into airplane mode which turns many things&nbsp;off. </p>
+<p>When it comes to choosing between <em>location sources</em> - <span class="caps">GPS</span> vs network - GPS will be more battery hungry, but has better accuracy; network location is easier on the battery but isn’t as&nbsp;accurate.</p>
+<p>For <em>time intervals</em>, consider using 60 seconds or&nbsp;more.</p>
 
           </div>
         </section>
@@ -202,6 +202,22 @@
           <div class="lead"><h2 id="why-can-t-i-remove-the-notification-">Why can’t I remove the&nbsp;notification?</h2>
 <p>As of newer versions of Android, removing the notification will cause the service to be killed. As a result, the notification now needs to stay there. You may have seen a recent increase in the number of apps that need to sit in the notification bar for the same reason - to perform background services without being&nbsp;killed.  </p>
 <p>There is an option in the app’s settings that allows you to remove the notification buttons if you want a smaller&nbsp;notification.  </p>
+
+          </div>
+        </section>
+        <hr id="faq12">
+        <section>
+          <div class="lead"><h2 id="what-settings-are-required-for-task-managers-">What settings are required for task&nbsp;managers?</h2>
+<p>Task managers don’t like GPSLogger and will <em>frequently</em> kill the&nbsp;service.  </p>
+<p>Due to the varied nature of the way task managers and task killers work, I simply cannot help or advise with any problems where you have one of these installed, and <a href="http://www.howtogeek.com/166140/you-dont-need-to-install-a-task-manager-how-to-manage-running-apps-on-android/">would advise against it as&nbsp;well</a></p>
+
+          </div>
+        </section>
+        <hr id="faq13">
+        <section>
+          <div class="lead"><h2 id="how-is-this-different-from-other-logging-apps-">How is this different from other logging&nbsp;apps?</h2>
+<p>It’s meant to be more battery efficient. A lot of other apps, such as MyTracks, usually go with the assumption that you have a data connection available and your routes won’t be very long. They use <span class="caps">CPU</span> wakelocks and log points extremely frequently with high accuracy. The aim of GPSLogger is to log points and stay&nbsp;quiet.  </p>
+<p>To put it another way, MyTracks or similar are better suited for runs; GPSLogger is suited for days out, hiking,&nbsp;photography.</p>
 
           </div>
         </section>
@@ -230,14 +246,6 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 
           </div>
         </section>
-        <hr id="faq12">
-        <section>
-          <div class="lead"><h2 id="what-settings-are-required-for-task-managers-">What settings are required for task&nbsp;managers?</h2>
-<p>Task managers don’t like GPSLogger and will <em>frequently</em> kill the&nbsp;service.  </p>
-<p>Due to the varied nature of the way task managers and task killers work, I simply cannot help or advise with any problems where you have one of these installed, and <a href="http://www.howtogeek.com/166140/you-dont-need-to-install-a-task-manager-how-to-manage-running-apps-on-android/">would advise against it as&nbsp;well</a></p>
-
-          </div>
-        </section>
         <hr id="faq15">
         <section>
           <div class="lead"><h2 id="how-can-i-define-a-preset-file-with-my-own-values-">How can I define a preset file with my own&nbsp;values?</h2>
@@ -253,14 +261,6 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
           <div class="lead"><h2 id="how-do-i-download-it-">How do I download&nbsp;it?</h2>
 <p>Search for <span class="caps">GPS</span> Logger for Android in Google Play, or follow <a href="market://details?id=com.mendhak.gpslogger">this direct link</a>.</p>
 <p>You can also download the <a href="https://github.com/mendhak/gpslogger/releases"><span class="caps">APK</span> directly here</a>.</p>
-
-          </div>
-        </section>
-        <hr id="faq13">
-        <section>
-          <div class="lead"><h2 id="how-is-this-different-from-other-logging-apps-">How is this different from other logging&nbsp;apps?</h2>
-<p>It’s meant to be more battery efficient. A lot of other apps, such as MyTracks, usually go with the assumption that you have a data connection available and your routes won’t be very long. They use <span class="caps">CPU</span> wakelocks and log points extremely frequently with high accuracy. The aim of GPSLogger is to log points and stay&nbsp;quiet.  </p>
-<p>To put it another way, MyTracks or similar are better suited for runs; GPSLogger is suited for days out, hiking,&nbsp;photography.</p>
 
           </div>
         </section>
