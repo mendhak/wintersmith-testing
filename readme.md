@@ -20,4 +20,14 @@ It could sit in `docs\src` - have Android Gradle copy from there, have generated
 
 It could sit in `assets\docs` - have Android Gradle and wintermsith copy from there
 
-Other ideas...    
+Other ideas... 
+
+## Tweaks
+
+This is based off the site that `wintersmith new` generates.  Modified so that it can work without any front matter. 
+
+`plugins/paginator.coffee` - Changed `getArticles` to read from content directory, not just subdirectories. Sorted by filename.  Uses first part of filename to set anchor on index.html
+
+`plugins/blog.coffee` - Allows setting defaults, specifically `filenameTemplate` (where it outputs to) and the `template` (which jade it uses)
+
+`templates/index.jade` - Changed to show entire contents of every file, effectively a single page

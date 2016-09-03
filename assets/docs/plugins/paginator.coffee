@@ -28,7 +28,7 @@ module.exports = (env, callback) ->
         for k,v of value
           nameparts = value["filename"].replace('.html','').split "-"
           value["anchorname"] = nameparts[0]
-          value["template"] = "article.jade"
+          
 
     for key, value of contents[options.articles]
       articles.push value if value instanceof env.plugins.Page
