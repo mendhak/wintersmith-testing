@@ -176,6 +176,9 @@
 <p><strong>Distance filter</strong> - When a point becomes available, the app will check to ensure that this much distance exists between the previous and current points. If it isn’t this distance, the point is&nbsp;discarded.</p>
 <p><strong>Accuracy filter</strong> - When a point becomes available, the app will check to ensure that this point has a minimum accuracy specified. If it does not match the specified accuracy, the point is discarded. This is useful if you are inside a building for a&nbsp;while.</p>
 <p><strong>Time interval for accuracy</strong> - When searching for a point, the app can continue searching for this many seconds until it finds a point that meets the accuracy and distance filter criteria&nbsp;above.</p>
+<p><strong>Absolute timeout</strong> - When searching for a point and trying over and over, the app will give up when this timeout is reached.  This is useful for when you’re inside buildings, <span class="caps">GPS</span> tends to keep searching and finding&nbsp;nothing.  </p>
+<p><strong>Keep <span class="caps">GPS</span> on between fixes</strong> - Normally, the app stops using <span class="caps">GPS</span> between points, to save battery.  This means when it’s time to log the next point, the GPS needs to be ‘woken up’ again and this takes a little time.  Keeping GPS on between fixes causes this ‘wake up’ time to be&nbsp;reduced.</p>
+<p><strong>Don’t log if I’m not moving</strong> - Some Android phones come with activity recognition; the app can use this to determine if you are not moving and if so, it will not attempt to log a&nbsp;point. </p>
 
           </div>
         </section>
@@ -295,6 +298,16 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
           <div class="lead"><h2 id="can-i-use-your-app-in-a-research-project-">Can I use your app in a research&nbsp;project?</h2>
 <p>This is actually the most commonly asked question!  Yes, feel free to use GPSLogger in your&nbsp;research.  </p>
 <p>The source code is <a href="https://github.com/mendhak/gpslogger/">available on Github</a> if you want to dig through it.  Feel free to link back to the <a href="https://github.com/mendhak/gpslogger/">Github repo</a> for&nbsp;credit/citation.</p>
+
+          </div>
+        </section>
+        <hr id="faq19">
+        <section>
+          <div class="lead"><h2 id="what-are-profiles-">What are&nbsp;profiles?</h2>
+<p>Profiles are basically different settings, grouped under a name. For example you can have a <em>night</em> profile and a <em>trekking</em> profile with different logging frequencies, and switch between the two when you need&nbsp;to.</p>
+<p>Tap the profile header and then “Add profile” to create a new profile. The new profile will have the same settings as the one you’re currently on.  You can then modify a few settings and those should be specific to your new&nbsp;profile.</p>
+<p>Conversely, any settings you change in one profile won’t automatically be saved in other <em>existing</em> profiles.  It is recommended that you do your basic setup in the <em>Default Profile</em>&nbsp;first.  </p>
+<p>You can delete a profile by long pressing&nbsp;it.</p>
 
           </div>
         </section>
