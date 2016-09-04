@@ -142,6 +142,7 @@
         <section>
           <div class="lead"><h2 id="i-am-displaying-imperial-units-but-why-isn-t-it-logging-imperial-to-the-file-">I am displaying imperial units but why isn’t it logging imperial to the&nbsp;file?</h2>
 <h2 id="what-are-the-units-in-which-the-values-are-logged-">What are the units in which the values are&nbsp;logged?</h2>
+<p><img src="/wintersmith-testing/images/18imperial.png" alt="imperial"></p>
 <p>The imperial units are only for display purposes and nothing else. However, when logging, the units are always in <strong><span class="caps">SI</span> units</strong> - meters and&nbsp;seconds.</p>
 <a href="#faq05"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
@@ -172,6 +173,7 @@
         <hr id="faq08">
         <section>
           <div class="lead"><h2 id="what-do-the-various-settings-mean-accuracy-retry-interval-for-accuracy-etc-">What do the various settings mean? (Accuracy, retry interval for accuracy,&nbsp;etc)</h2>
+<p><img src="/wintersmith-testing/images/7b.png" alt="7b"></p>
 <p><strong>Time before logging</strong> - How long to wait after a point has been logged to try logging&nbsp;again.</p>
 <p><strong>Distance filter</strong> - When a point becomes available, the app will check to ensure that this much distance exists between the previous and current points. If it isn’t this distance, the point is&nbsp;discarded.</p>
 <p><strong>Accuracy filter</strong> - When a point becomes available, the app will check to ensure that this point has a minimum accuracy specified. If it does not match the specified accuracy, the point is discarded. This is useful if you are inside a building for a&nbsp;while.</p>
@@ -203,6 +205,7 @@
         <hr id="faq11">
         <section>
           <div class="lead"><h2 id="why-can-t-i-remove-the-notification-">Why can’t I remove the&nbsp;notification?</h2>
+<p><img src="/wintersmith-testing/images/17notif.png" alt="notif"></p>
 <p>As of newer versions of Android, removing the notification will cause the service to be killed. As a result, the notification now needs to stay there. You may have seen a recent increase in the number of apps that need to sit in the notification bar for the same reason - to perform background services without being&nbsp;killed.  </p>
 <p>There is an option in the app’s settings that allows you to remove the notification buttons if you want a smaller&nbsp;notification.  </p>
 <a href="#faq11"><img src="images/permalink.png" style="float:left;height:25px;"></a>
@@ -236,7 +239,6 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <blockquote>
 <p><code>immediatestart</code> - (true/false) Start logging&nbsp;immediately  </p>
 <p><code>immediatestop</code> - (true/false) Stop&nbsp;logging</p>
-<p><code>logonce</code> - (true/false) Log a single point and&nbsp;stop</p>
 <p><code>setnextpointdescription</code> - (text) Sets the annotation text to use for the next point&nbsp;logged</p>
 <p><code>settimebeforelogging</code> - (number) Sets preference for time before logging&nbsp;option  </p>
 <p><code>setdistancebeforelogging</code> - (number) Sets preference for distance before logging&nbsp;option</p>
@@ -244,6 +246,8 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
 <p><code>setretrytime</code> - (number) Sets preference for retry&nbsp;time</p>
 <p><code>setabsolutetimeout</code> - (number) Sets preference for absolute&nbsp;timeout</p>
 <p><code>setprefercelltower</code> - (true/false) Enables or disables the <span class="caps">GPS</span> or celltower&nbsp;listeners</p>
+<p><code>logonce</code> - (true/false) Log a single point, then&nbsp;stop</p>
+<p><code>switchprofile</code> - (text) The name of the profile to switch&nbsp;to</p>
 </blockquote>
 <p>You can also invoke the Start and Stop <strong>shortcuts</strong> that GPSLogger comes&nbsp;with.</p>
 <a href="#faq14"><img src="images/permalink.png" style="float:left;height:25px;"></a>
@@ -262,7 +266,8 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
         <hr id="faq16">
         <section>
           <div class="lead"><h2 id="how-do-i-download-it-">How do I download&nbsp;it?</h2>
-<p>Search for <span class="caps">GPS</span> Logger for Android in Google Play, or follow <a href="market://details?id=com.mendhak.gpslogger">this direct link</a>.</p>
+<p><a href="market://details?id=com.mendhak.gpslogger"><img src="/wintersmith-testing/images/qrcode.gpslogger.png" alt="qrcode"></a></p>
+<p>Search for <span class="caps">GPS</span> Logger for Android in Google Play, or follow <a href="https://play.google.com/store/apps/details?id=com.mendhak.gpslogger">this direct link</a>.</p>
 <p>You can also download the <a href="https://github.com/mendhak/gpslogger/releases"><span class="caps">APK</span> directly here</a>.</p>
 <a href="#faq16"><img src="images/permalink.png" style="float:left;height:25px;"></a>
           </div>
@@ -304,6 +309,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
         <hr id="faq19">
         <section>
           <div class="lead"><h2 id="what-are-profiles-">What are&nbsp;profiles?</h2>
+<p><img src="/wintersmith-testing/images/19profiles.gif" alt="profilesdemo"></p>
 <p>Profiles are basically different settings, grouped under a name. For example you can have a <em>night</em> profile and a <em>trekking</em> profile with different logging frequencies, and switch between the two when you need&nbsp;to.</p>
 <p>Tap the profile header and then “Add profile” to create a new profile. The new profile will have the same settings as the one you’re currently on.  You can then modify a few settings and those should be specific to your new&nbsp;profile.</p>
 <p>Conversely, any settings you change in one profile won’t automatically be saved in other <em>existing</em> profiles.  It is recommended that you do your basic setup in the <em>Default Profile</em>&nbsp;first.  </p>
@@ -413,7 +419,7 @@ For example, in Tasker, create a new action under Misc &gt; Send&nbsp;Intent. </
   
 
       <section class="copy">
-        <p>&copy; Sat Sep 03 2016 20:05:08 GMT+0100 (BST) Mendhak &mdash; </p>
+        <p>&copy; Sun Sep 04 2016 09:38:11 GMT+0100 (DST) Mendhak &mdash; </p>
       </section>
     </footer>
   </body>

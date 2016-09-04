@@ -14,8 +14,6 @@ These are the extras you can send to GPSLogger:
 
 > `immediatestop` - (true/false) Stop logging
 
-> `logonce` - (true/false) Log a single point and stop
-
 > `setnextpointdescription` - (text) Sets the annotation text to use for the next point logged
 
 > `settimebeforelogging` - (number) Sets preference for time before logging option  
@@ -29,6 +27,10 @@ These are the extras you can send to GPSLogger:
 > `setabsolutetimeout` - (number) Sets preference for absolute timeout
   
 > `setprefercelltower` - (true/false) Enables or disables the GPS or celltower listeners
+
+> `logonce` - (true/false) Log a single point, then stop
+
+> `switchprofile` - (text) The name of the profile to switch to
 
 You can also invoke the Start and Stop **shortcuts** that GPSLogger comes with.
 

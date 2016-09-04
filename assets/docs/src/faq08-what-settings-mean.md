@@ -1,5 +1,7 @@
 ## What do the various settings mean? (Accuracy, retry interval for accuracy, etc)
 
+![7b](images/7b.png)
+
 **Time before logging** - How long to wait after a point has been logged to try logging again.
 
 **Distance filter** - When a point becomes available, the app will check to ensure that this much distance exists between the previous and current points. If it isn't this distance, the point is discarded.
